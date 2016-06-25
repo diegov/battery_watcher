@@ -2,7 +2,7 @@ Overview
 ---------
 
 A small user-space daemon to watch the battery charge of devices under /sys/class/power_supply/. 
-It sends a notification when the first time charge falls to 20%, and again when it falls to 10%. 
+It sends a notification the first time charge falls to 20%, and again when it falls to 10%. 
 
 Requirements
 -------------
@@ -12,10 +12,12 @@ libnotify
 Building
 ---------
 
+```
 mkdir build
 cd build
 cmake ..
 make
+```
 
 Usage
 ------
