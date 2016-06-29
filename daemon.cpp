@@ -61,6 +61,8 @@ void Watcher::checkStatus() {
             msg.append(percent_str.substr(0, 100));
             syslog(LOG_ERR, msg.c_str());
         }
+    } else {
+        last_status = INT_MAX;
     }
     file.close();
 }
